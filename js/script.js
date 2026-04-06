@@ -15,3 +15,19 @@ function curtir() {
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
+
+function descurtir() {
+
+  if(descurtido == false){
+    deslikeCount++;
+    descurtido = true;
+    document.getElementById("deslikeCount").innerText = DeslikeCount;
+  } else{
+    deslikeCount--;
+   descurtido = false;
+    document.getElementById("deslikeCount").innerText = DeslikeCount;
+  }
+}
+
+document.getElementById("deslikeBtn").addEventListener("click", descurtir);
+
