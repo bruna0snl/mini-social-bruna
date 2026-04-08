@@ -3,32 +3,35 @@ let curtido = false; // flag booleana
 
 function curtir() {
 
-  if(curtido == false){
+ if(curtido == false){
     likeCount++;
     curtido = true;
     document.getElementById("likeCount").innerText = likeCount;
-  } else{
+ }else{
     likeCount--;
     curtido = false;
     document.getElementById("likeCount").innerText = likeCount;
-  }
+ }
+
+  
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
 
-function descurtir() {
+let deslikeCount = 0;
+let descurtido = false; // flag booleana
 
+function descurtir() {
   if(descurtido == false){
     deslikeCount++;
     descurtido = true;
-    document.getElementById("deslikeCount").innerText = DeslikeCount;
   } else{
     deslikeCount--;
    descurtido = false;
-    document.getElementById("deslikeCount").innerText = DeslikeCount;
   }
+  document.getElementsById("deslikeCount").innerText = deslikeCount;
 }
 
-document.getElementById("likeBtn").addEventListener("click", curtir);
+
 document.getElementById("deslikeBtn").addEventListener("click", descurtir);
 
