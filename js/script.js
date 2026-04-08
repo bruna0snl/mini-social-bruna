@@ -29,5 +29,6 @@ function descurtir() {
   }
 }
 
+document.getElementById("likeBtn").addEventListener("click", curtir);
 document.getElementById("deslikeBtn").addEventListener("click", descurtir);
 
